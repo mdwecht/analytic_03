@@ -16,10 +16,10 @@ class Job(models.Model):
     '''
     DSAE Fields Specific to 'analytic_03' Job Type:
     '''
-    src_host = models.CharField(max_length=20, default='0.0.0.0')
-    src_port = models.CharField(max_length=20, default='0.0.0.0')
-    dest_host = models.CharField(max_length=20, default='0.0.0.0')
-    dest_port = models.CharField(max_length=20)
+    src_host = models.CharField(max_length=20, default='Source Host')
+    src_port = models.CharField(max_length=20, default='0')
+    dest_host = models.CharField(max_length=20, default='Destination Host')
+    dest_port = models.CharField(max_length=20, default='0')
     search =  models.CharField(max_length=20)
     sid = models.CharField(max_length=20)
     session = models.CharField(max_length=20)
